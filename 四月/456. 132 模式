@@ -32,7 +32,7 @@ n == nums.length
 1 <= n <= 104
 -109 <= nums[i] <= 109
 
-'''C++
+```c++
 class Solution {
 public:
     bool find132pattern(vector<int>& nums) {
@@ -51,4 +51,4 @@ public:
         return false;
     }
 };
-'''
+```

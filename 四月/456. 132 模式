@@ -39,10 +39,10 @@ public:
         stack<int> a;
         int mid = -1e9;
         for(int i=nums.size()-1;i>=0;i--){
-            if(nums[i]<mid){
+            if(nums[i]<mid){ // 若出现132中的1则返回正确值
                 return true;
             }
-            while(!a.empty() && nums[i] > a.top()){
+            while(!a.empty() && nums[i] > a.top()){ // 若当前值大于或等于2则更新2（2为栈中小于当前值的最大元素）
                 mid = a.top();
                 a.pop();
             }
